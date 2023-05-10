@@ -86,6 +86,7 @@ export const register = async (req, res, next) => {
     const existingUser = db.data.users.find((u) => u.username === username);
     if (existingUser) {
       req.flash('error', `User with username of ${username} already exist ☹️!`);
+      return res.redirect('/register');
     }
     db.data.users.push({
       id: randomUUID(),
