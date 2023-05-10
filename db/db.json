@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": "1b8f34aa-1276-48da-a9fc-55ebcaaa19c8",
+      "firstName": "A",
+      "lastName": "B",
+      "username": "usmoniy1",
+      "password": "$2b$10$uSq5T.hm6ERtuzFCxNWtpupWnzb6utUlfjpbLb4/CLmTV0rHZ7OHa"
+    }
+  ],
+  "todos": []
+}
