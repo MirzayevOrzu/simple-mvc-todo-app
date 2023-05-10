@@ -1,0 +1,8 @@
+<h1>Create Todo</h1>
+<form action="/todos/<%= userId && userId %>" method="post" autocomplete="off">
+  <div class="mb-3">
+    <label for="text" class="form-label">Text</label>
+    <input type="text" class="form-control" id="text" name="text" />
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
