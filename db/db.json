@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "id": "bc5a132c-cae2-41d3-93f7-dc047c43c20b",
+      "username": "usmon1",
+      "password": "$2b$10$9jPtPaL8C0VqK5teJKzFRePYvluUgnCdfYyEkCTEqsjAX2f8y8Ad."
+    },
+    {
+      "id": "f72dd015-e792-499c-8cb6-f865c3bfccd1",
+      "username": "usmon",
+      "password": "$2b$10$jaZtqnLzXSaz7VCzQvXzDeZSQqNVmijP3qhsRn/E5kus0p17/z7Y6"
+    }
+  ],
+  "todos": [
+    {
+      "id": "18df58d9-03d9-46c2-a0f5-ffee2614b803",
+      "text": "U",
+      "userId": "bc5a132c-cae2-41d3-93f7-dc047c43c20b",
+      "completed": true
+    },
+    {
+      "id": "80b74ab7-2984-41e7-bb7d-182764f4f6be",
+      "text": "HOLO",
+      "userId": "bc5a132c-cae2-41d3-93f7-dc047c43c20b",
+      "completed": false
+    },
+    {
+      "id": "29a6df59-6293-417c-b16c-23d76eb62d1b",
+      "text": "A",
+      "userId": "f72dd015-e792-499c-8cb6-f865c3bfccd1",
+      "completed": false
+    },
+    {
+      "id": "4e8e036d-5b0d-4142-8bf2-e4a4f215cb5d",
+      "text": "B",
+      "userId": "f72dd015-e792-499c-8cb6-f865c3bfccd1",
+      "completed": false
+    },
+    {
+      "id": "3ec6d68f-d830-4b80-84ca-a57fbf906e38",
+      "text": "D",
+      "userId": "f72dd015-e792-499c-8cb6-f865c3bfccd1",
+      "completed": false
+    },
+    {
+      "id": "b121681b-d7c3-4922-96e1-52eb6031d96a",
+      "text": "E",
+      "userId": "f72dd015-e792-499c-8cb6-f865c3bfccd1",
+      "completed": false
+    },
+    {
+      "id": "4d9e8293-0b88-410c-9c8f-1914a1136124",
+      "text": "F",
+      "userId": "f72dd015-e792-499c-8cb6-f865c3bfccd1",
+      "completed": false
+    },
+    {
+      "id": "779a1850-38e6-4eed-bcea-2be2b70c51de",
+      "text": "G",
+      "userId": "f72dd015-e792-499c-8cb6-f865c3bfccd1",
+      "completed": false
+    },
+    {
+      "id": "19725cfc-67b0-4040-bb35-e834636cb2d8",
+      "text": "H",
+      "userId": "f72dd015-e792-499c-8cb6-f865c3bfccd1",
+      "completed": false
+    }
+  ]
+}

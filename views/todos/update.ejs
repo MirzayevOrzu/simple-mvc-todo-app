@@ -1,0 +1,8 @@
+<h1>Update Todo</h1>
+<form action="/updateTodo/<%= todo.userId %>/<%= todo.id %>" method="post" autocomplete="off">
+  <div class="mb-3">
+    <label for="text" class="form-label"> Text</label>
+    <input type="text" class="form-control" id="text" name="text" value="<%= todo.text %>" />
+  </div>
+  <button type="submit" class="btn btn-primary">Update</button>
+</form>

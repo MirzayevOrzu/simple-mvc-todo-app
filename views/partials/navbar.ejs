@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg mb-4" style="background-color: #e3f2fd">
+  <div class="container-fluid">
+    <% if (userId) { %>
+    <a class="navbar-brand" href="/?userId=<%= userId %>">TODO APP</a>
+    <% } else { %>
+    <a class="navbar-brand" href="/?userId=false">TODO APP</a>
+    <% } %>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="/?userId=<%= userId && userId %>"
+          >Home</a
+        >
+        <% if (userId) { %>
+        <a class="nav-link" href="/createTodo?userId=<%= userId && userId %>">Create Todo</a>
+        <a class="nav-link" href="/logout">Logout</a>
+        <% } else { %>
+        <a class="nav-link" href="/register">Register</a>
+        <a class="nav-link" href="/login">Login</a>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</nav>
