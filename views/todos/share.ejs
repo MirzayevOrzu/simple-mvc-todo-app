@@ -1,0 +1,18 @@
+<h1>Share Todo</h1>
+<form action="/todos/share" method="post" autocomplete="off">
+  <div class="mb-3">
+    <label for="todoId" class="form-label">Todo</label>
+    <select name="todoId" id="todoId" class="form-select" required>
+      <% todos.forEach(todo => { %>
+      <option value="<%= todo.id %>"><%= todo.text %></option>
+      <% }) %> 
+    </select>
+    <label for="userId" class="form-label">User</label>
+    <select name="userId" id="userId" class="form-select" required>
+      <% users.forEach(user => { %>
+      <option value="<%= user.id %>"><%= user.firstName %> <%= user.lastName %></option>
+      <% }) %>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

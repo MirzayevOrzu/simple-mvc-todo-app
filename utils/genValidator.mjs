@@ -12,13 +12,12 @@ export const genValidator = (schema, redirectPath) => {
    * @param {express.NextFunction} next
    */
   return (req, res, next) => {
-    const { userId } = req.query;
     const result = schema.validate(req.body);
 
     if (result.error) {
       req.flash('error', result.error.details[0].message);
 
-      return res.redirect(`${redirectPath}?userId=${userId}`);
+      return res.redirect(redirectPath);
     }
 
     next();

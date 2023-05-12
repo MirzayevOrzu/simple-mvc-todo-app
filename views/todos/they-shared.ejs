@@ -1,0 +1,24 @@
+<h1>Others shared</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Text</th>
+      <th scope="col">Status</th>
+      <th scope="col">User</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% todos.forEach((todo, i) => { %>
+    <tr>
+      <td><%= i + 1 %></td>
+      <td><%= todo.text %></td>
+      <td>
+        <input disabled class="form-check-input" type="checkbox" <%= todo.completed ? "checked" :""%> />
+        <%= todo.completed===true ? "Completed" : "Not Completed" %>
+      </td>
+      <td><%= todo.user.firstName %> <%= todo.user.lastName %></td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>

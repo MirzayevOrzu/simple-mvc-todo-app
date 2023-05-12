@@ -1,0 +1,36 @@
+<h1>Todo details</h1>
+<div class="card mb-4" style="width: 18rem">
+  <div class="card-body">
+    <h5 class="card-title"><%= todo.text %></h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">
+      <%= todo.completed===true ? "Completed" : "Not Completed" %>
+    </h6>
+  </div>
+</div>
+<h2>Shared with</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% users.forEach((user, i) => { %>
+    <tr>
+      <td><%= i + 1 %></td>
+      <td><%= user.firstName %></td>
+      <td><%= user.lastName %></td>
+      <td>
+        <form action="/todos/unshare" method="post">
+          <input type="text" name="userId" value="<%= user.id %>" hidden />
+          <input type="text" name="todoId" value="<%= todo.id %>" hidden />
+          <button type="submit" class="btn btn-warning">Unshare</button>
+        </form>
+      </td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>

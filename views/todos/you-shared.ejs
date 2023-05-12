@@ -1,0 +1,19 @@
+<h1>You shared</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Text</th>
+      <th scope="col">Shared with</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% todos.forEach((todo, i) => { %>
+    <tr>
+      <td><%= i + 1 %></td>
+      <td><%= todo.text %></td>
+      <td><%= todo.sharedWithCount %></td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>

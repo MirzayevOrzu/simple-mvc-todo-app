@@ -17,7 +17,7 @@ app.use(expressLayouts);
 app.use(cookieParser('hey'));
 app.use(
   session({
-    cookie: { maxAge: 60000 },
+    cookie: { maxAge: 3_600_000 /* 1 hour */ },
     saveUninitialized: false,
     resave: false,
     secret: 'hey',
