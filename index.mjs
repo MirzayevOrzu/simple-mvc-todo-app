@@ -6,8 +6,11 @@ import expressLayouts from 'express-ejs-layouts';
 import session from 'express-session';
 import flash from 'connect-flash';
 import cookieParser from 'cookie-parser';
+import dotenv from 'dotenv';
 import userRouter from './routes/users.mjs';
 import todoRouter from './routes/todos.mjs';
+
+dotenv.config();
 
 const app = express();
 app.use(methodOverride('_method'));
@@ -40,7 +43,7 @@ app.set('layout', 'layouts/main');
 app.use(userRouter);
 app.use(todoRouter);
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Server ${PORT}-portda ishlayapti`);
 });
